@@ -1,0 +1,118 @@
+.form-wrapper {
+    height: calc(100vh - 250px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px 0;
+    /* filter: drop-shadow(36px 26px 14px #4090b5)
+    drop-shadow(-45px -40px 25px #0772DE); */
+  animation: blinkShadowsFilter 8s ease-in infinite;
+}
+.input-is {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-radius: 10px ;
+    transition: all 1s ease-in-out;
+    border-bottom: 1px solid hsl(221, 26%, 43%);
+  }
+  .input-is:hover {
+    transition: all 1s ease-in-out;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(102, 224, 255, 0.2) 27%,
+      rgba(102, 224, 255, 0.2) 63%,
+      transparent 100%
+    );
+  }
+  
+.input-is:focus {
+    outline: none;
+    border-bottom: 1px solid hsl(192, 100%, 100%);
+    
+    color: hsl(192, 100%, 88%);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(102, 224, 255, 0.2) 27%,
+      rgba(102, 224, 255, 0.2) 63%,
+      transparent 100%
+    );
+  }
+  
+  .input-is::-moz-placeholder {
+    color: hsla(192, 100%, 88%, 0.806);
+  }
+  
+  .input-is::placeholder {
+    color: hsla(192, 100%, 88%, 0.806);
+  }
+  
+.form-title {
+    margin-bottom: 10px;
+    font-size: 27px;
+    margin-bottom: 15px;
+    color: teal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+.form input {
+    border: 2px solid teal;
+    padding: 10px;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.form-btn {
+    width: 70%;
+    margin-left: 10%;
+  border: none;
+  color: hsla(192, 100%, 88%, 0.806);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(102, 224, 255, 0.2) 27%,
+    rgba(102, 224, 255, 0.2) 63%,
+    transparent 100%
+  );
+  border-radius: 10px;
+  clip-path: polygon(0 0, 85% 0%, 100% 0, 100% 15%, 100% 90%, 91% 100%, 0 100%);
+  padding: 0.5em;
+  animation: blinkShadowsFilter 0.5s ease-in infinite;
+  transition: all 500ms;
+}
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: snow;
+}
+.forms-link  {
+    text-decoration: none;
+    color: #0772DE;
+}
+
+@media (max-width: 520px){
+    .form-wrapper {
+        height: auto;
+    }
+}

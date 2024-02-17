@@ -1,0 +1,62 @@
+.services {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service-item {
+    padding: 7px;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #2c3e50;
+    border: 1px solid gray;
+    width: 21%;
+    border-radius: 60px;
+    transition: 0.7s ease;
+}
+
+
+  .service-item-btn:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .service-item-btn:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+
+.service-item i {
+    font-size: 40px;
+    transition: 0.7s ease;
+}
+.service-item  i:hover,
+.service-item b:hover  {
+    color: #0772DE;
+    cursor: pointer;
+}
+
+
+@media (max-width : 920px){
+    .services {
+        flex-wrap: wrap;
+        padding: 30 15px;
+    }
+    .service-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width : 520px){
+   .service-item {
+        width: 90%;
+        font-size: 25px;
+    }
+    
+    .service-item i {
+        font-size: 40px;
+    }
+}

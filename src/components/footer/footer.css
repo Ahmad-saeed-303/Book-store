@@ -1,0 +1,311 @@
+.footer {
+    padding: 10px 30px;
+    background: linear-gradient(0deg, #0772DE 0%,  #0D1B2A  100%);
+}
+
+/* Footer Social Media */
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--main-color);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-social-medai-text {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-social-media-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-media-icon{
+    margin: 0 15px;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-social-media-icon i {
+    font-size: 32px;
+}
+
+/* Footer Links Wrapper */
+.footer-links-wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-links-item {
+    width: 30%;
+}
+
+.footer-links-item-title {
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    border-bottom: 3px solid white;
+    width: max-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    padding: 5px;
+}
+
+.footer-link {
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-address-item {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.footer-address-item i {
+   font-size: 27px;
+   margin-right: 5px;
+}
+
+.footer-description {
+    font-size: 17px;
+    color: var(--main-color);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: #000;
+} */
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+
+    /* -- YouTube Link Styles -- */
+
+    #source-link {
+      top: 60px;
+    }
+
+    #source-link>i {
+      color: rgb(94, 106, 210);
+    }
+
+    #yt-link {
+      top: 10px;
+    }
+
+    #yt-link>i {
+      color: rgb(219, 31, 106);
+
+    }
+
+    .meta-link {
+      align-items: center;
+      backdrop-filter: blur(3px);
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      display: inline-flex;
+      gap: 5px;
+      left: 10px;
+      padding: 10px 20px;
+      position: fixed;
+      text-decoration: none;
+      transition: background-color 600ms, border-color 600ms;
+      z-index: 10000;
+    }
+
+    .meta-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .meta-link>i,
+    .meta-link>span {
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .meta-link>span {
+      color: white;
+      font-family: "Rubik", sans-serif;
+      transition: color 600ms;
+    }
+
+
+
+/* Media Queries */
+
+@media (max-width: 820px){
+
+    .footer-social-media-icon{
+        margin-right: 7px;
+    }
+    
+    .footer-links-wrapper {
+        flex-wrap: wrap;
+    }
+    .footer-links-item {
+        width: 40%;
+    }
+
+    .footer-links-item:last-of-type {
+        width: 80%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 720px){
+
+    .footer-social-media {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-social-media-icon{
+        margin: 15px 10px 0 0;
+    }
+}
+
+@media (max-width: 520px){
+    .footer {
+        padding: 15px;
+    }
+    .footer-links-item {
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+}
